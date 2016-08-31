@@ -34,25 +34,13 @@
                                 <action selector="exitFullScreen:" destination="iN0-l3-epB" eventType="touchUpInside" id="V3z-OS-wk6"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISl-Sp-TNr">
-                            <rect key="frame" x="100" y="0.0" width="75" height="50"/>
-                            <state key="normal" title="开启画中画">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                            <connections>
-                                <action selector="startPiP:" destination="iN0-l3-epB" eventType="touchUpInside" id="4pm-qG-ugP"/>
-                            </connections>
-                        </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     <gestureRecognizers/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="tTj-Fq-cK9" secondAttribute="height" multiplier="655:50" id="D9l-ic-xm7"/>
-                        <constraint firstItem="ISl-Sp-TNr" firstAttribute="top" secondItem="tTj-Fq-cK9" secondAttribute="top" id="Gqq-rm-iI7"/>
-                        <constraint firstAttribute="bottom" secondItem="ISl-Sp-TNr" secondAttribute="bottom" id="KMU-Bd-ktD"/>
                         <constraint firstItem="5as-eL-HCH" firstAttribute="top" secondItem="tTj-Fq-cK9" secondAttribute="top" id="UEo-DZ-S2S"/>
                         <constraint firstAttribute="bottom" secondItem="5as-eL-HCH" secondAttribute="bottom" id="Ygv-he-4qo"/>
-                        <constraint firstItem="ISl-Sp-TNr" firstAttribute="leading" secondItem="5as-eL-HCH" secondAttribute="trailing" constant="50" id="lbr-4X-aEP"/>
                         <constraint firstItem="5as-eL-HCH" firstAttribute="leading" secondItem="tTj-Fq-cK9" secondAttribute="leading" id="mbm-f9-f9M"/>
                     </constraints>
                 </view>

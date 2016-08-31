@@ -23,21 +23,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor darkGrayColor];
-    UIButton *playbtn = [[UIButton alloc]initWithFrame:CGRectMake(150, 300, 75, 30)];
-    playbtn.backgroundColor = [UIColor yellowColor];
-    [self.view addSubview:playbtn];
-    [playbtn addTarget:self action:@selector(playimg) forControlEvents:UIControlEventTouchUpInside];
-}
-
-
--(void)playimg{
     [self createAVPlayerView];
+
 }
 
 #pragma mark - 创建用于播放的View
 -(void)createAVPlayerView{
     //固定的实例化方法
-//    self.avplayerView = [LRLAVPlayerView avplayerViewWithVideoUrlStr:@"http://baobab.wdjcdn.com/1463028607774b.mp4" andInitialHeight:200.0 andSuperView:self.view];
     self.avplayerView = [LRLAVPlayerView avplayerViewWithVideoUrlStr:@"http://devimages.apple.com/iphone/samples/bipbop/gear1/prog_index.m3u8" andInitialHeight:200.0 andSuperView:self.view];
     
     self.avplayerView.delegate = self;
@@ -64,12 +56,5 @@
 }
 
 
-
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end
